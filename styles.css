@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); 
+/* This imports my chosen font into my css file*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Scroll-behavior changes how the pages link together making them smoothly transition to one another when using the nav bar*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+}
+
+body{
+    min-height: 500vh;
+    background-color: rgb(235, 236, 243);
+    background-size: cover;
+    background-position: center;
+}
+/* This changes the background color but also can be used to add a background image*/
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(93, 100, 175);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/* This changes the header, position:fixed; means that the header is fixed to one point on the page,
+display:flex;makes it easier to move elements around the page,
+justify-content defines where the elements are in the flex box, the space between creates space between the elements inside the flex box,
+z-index makes sure nothing overlaps with the header.*/
+
+.logo{
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+/*This changes the logo in the top left of the page, this can also be used to add in a image logo as well*/
+
+.navbar a{
+    position: relative;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 2rem;
+    letter-spacing: 2px; 
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:black;
+    margin-left: 50%;
+    transition: 0.3s;
+    
+}
+
+.navbar a:hover:before{
+    width: 100%;
+    margin-left: 0;
+
+}
+
+/* this creates the line that appears when you hover over the text in the nav bar, .navbar a::before creates the line but sets the width to 0 and the margin-left to 50% 
+it also sets the transition time (0.3s). navbar a:hover:before makes the line wider and also sets the margin to 0, this makes it move
+left at the same speed as it widens, so gives the illusion that it grows from the center.*/
+
+.section{
+    min-height: 100vh;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rm;
+
+}
+/* This makes sure that every page fits the users specific devise thy are using*/
+.content{
+    display:grid;
+    place-items:center;
+    
+}
+
+.imageHome{
+    display: grid;
+    place-items: center;
+}
+
+.imageHome img{
+    height: 500px;
+    width: 750px;
+    border-radius: 1%;
+  
+}
+ /* The .imageHome class is the div and the .imageHome img changes all imagesd that are inside that div*/
+
+.subtitle{
+    letter-spacing: 2px;
+    color: rgb(21, 21, 27);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+/* the .subtitle class changes the p to specific sizes and colors from any other text in that div*/
+
+.title{
+    font-size:5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color:black;
+    margin-bottom: 1rem;
+    line-height: 5rem;
+    
+}
+/* the .title class changes the p to specific sizes and colors from any other text in that div*/
+
+.aboutMeText{
+    font-size:2rem;
+    font-weight: 200;
+    line-height: 2.2rem;
+    color:black
+}
+
+.videos{
+    display:grid;
+    place-items:center;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 1rem;
+    min-height: 70vh;
+    margin: 7rem;
+    
+    
+   
+}
+
+.videos iframe{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.videoSection{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    min-height: 100vh;
+    padding: 20vh;
+}
+
+.slider-wrapper{
+    max-width: 120vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider{
+    display:flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(19, 19, 51);
+    scroll-snap-type:x mandatory;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+   
+}
+
+.slider::-webkit-scrollbar{
+    height: 20px;
+}
+
+.slider::-webkit-scrollbar-thumb{
+    background-color: rgba(41, 41, 41, 0.25);
+    border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-track{
+    background-color: rgba(32, 30, 61, 0.25);
+    border-radius: 10px;
+}
+
+.audioSection {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audioContainer{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.contactInfo{
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.contactLinks{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    margin-left: 25%;
+    text-decoration: none;
+}
+
+.emailLinks{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+
+footer{
+    position: scroll;
+    left: 0;
+    display: flex; 
+    bottom: 0;
+    height: 20vh;
+    width: 100%;
+    background-color:rgb(93, 100, 175);
+    justify-content: center;
+}
+
+.footerContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.footerContent a{
+    text-decoration: none;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+
+}

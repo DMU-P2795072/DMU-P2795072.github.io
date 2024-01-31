@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emily</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Emily</a>
+
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Videos">Videos</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Audio">Audio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <!--This creates a menu at the top of the page to then link to diffrent parts of the site-->
+
+    <div class="section" id="Home">
+        <div class="content">
+            <div>
+                <p class="subtitle">Hello!</p>
+                <h1 class="title">I am Emily Best<br>A media production student</h1>
+            </div>
+        </div>
+        
+        <div class="imageHome">
+             <img src="images/image1.jpg" alt="An image of Emily Best"/>
+        </div>
+    </div>
+
+    <!-- This creates the title of my home page and also an image.
+    clas="subtitle" links to the css file so that it changes the style of the one line of text (making it smaller from the rest of the text
+    in that div). <br> makes a break in the text to make the text flow better without the need of creating a new headder.-->
+
+    <div class="section" id="About">
+
+        <div class="imageHome">
+            <img src="images/image1.jpg" alt="An image of Emily Best" />
+       </div>
+
+        <div class="content">
+            <div>
+                <h1 class="title">About Me!</h1>
+
+                <p class="aboutMeText">Hi! I'm Emily Best, I am currently a first year Media Production student at De Montford University,
+                    <br> my goal at the end of my course is to work within live television production while also focusing on my love for <br>documentary making!
+                    Within my course at DMU I have already gained a wealth of knowlage about media and diffrent aspects of media such as photography,film-making,
+                    design and coding. <br>
+                    Follow me on my adventure through the wonderful world of media!
+                </p>
+
+            </div>
+        </div>
+     <!-- By changing the placement of the image to be above h1 changes the order in which it goes in the grid-->
+    </div>
+    <div class="videoSection"id="Videos">
+        <div class="videos">
+       
+            <iframe width="450" height="200" src="https://www.youtube.com/embed/r_ncfjJoEsE?si=dbCqEBMfN7tDmY1D"  
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            <video width="500" height="300" controls>
+                    <source src="video/allForNothing.mp4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </video>
+
+            <iframe width="450" height="200" src="https://www.youtube.com/embed/vmaDo1VuwnA?si=RDNRmtECwbfp--Bz" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+
+            <iframe width="450" height="200" src="https://www.youtube.com/embed/uRy504Ibqws?si=cFNSk8KqX47S39g6" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+            
+        </div> 
+    </div>
+    
+    <section class="container" id="Gallery"> 
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide1" src="images/image2.jpg" alt="An image of a building with dome rooftops.">
+                <img id="slide2" src="images/image3.jpg" alt="An image of a tree in the foreground and old victorian style building in the background.">
+                <img id="slide3" src="images/image4.jpg" alt="An image of a church with a clockface in the middle.">
+                <img id="slide4" src="images/image5.jpg" alt="An image of a statue focused on the hand and sword.">
+                <img id="slide5" src="images/image6.jpg" alt="An image of a church with a clockface in the middle.">
+                <img id="slide6" src="images/image7.jpg" alt="A image of a mans face with hat and glassess">
+    
+            </div>
+
+            <div class="audioContainer">
+
+                
+    
+            </div>
+           
+
+        </div>
+    </section>
+
+    <div class="audioSection" id="Audio">
+        <div class="audioContainer">
+            <h1 class="title">Radio Presenting</h1>
+            <audio controls class="audio">
+                <source src="audio/emilyRadio.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+
+    <div class="section" id="Contact">
+
+        <div class="imageHome">
+            <img src="images/image1.jpg" alt="An image of Emily Best"/>
+       </div>
+
+        <div class="content">
+            <div>
+                <h1 class="title">Contact Me!</h1>
+                <h2 class="contactInfo">Telephone</h2>
+                <a class="contactLinks" href="tel:+447941619247">07941 619247</a>
+                <h2 class="contactInfo">Email</h2>
+                <a class="emailLinks" href="mailto:emi.bst.97@gmail.com">Emi.bst.97@gmail.com</a>
+
+            </div>
+        </div>
+   
+    </div>
+    
+     <footer>
+        <div class="footerContent">
+            <a href="#">Back To Top!</a>
+        </div>
+        
+
+     </footer>
+
+       
+
+    
+
+   
+
+
+
+</body>
+</html>
