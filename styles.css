@@ -162,6 +162,9 @@ left at the same speed as it widens, so gives the illusion that it grows from th
     justify-content: center;
 }
 
+/* The above code helps style the code of my video section along with making the videos 
+be viewed in a collum format. this is done through the class of .videos.*/
+
 .container{
     min-height: 100vh;
     padding: 20vh;
@@ -204,6 +207,9 @@ left at the same speed as it widens, so gives the illusion that it grows from th
     border-radius: 10px;
 }
 
+/* this code above helps create the scroll bar. it allows me to control the style of the scroll bar
+while also helping me make the scroll back move as smooth as possable*/
+
 .audioSection {
     min-height: 100vh;
     display: flex;
@@ -243,6 +249,8 @@ left at the same speed as it widens, so gives the illusion that it grows from th
 
 }
 
+/* the above code styles the content links, this code also helps with where the text is placed on the screen.
+the code for text-decoration:none; makes the text on my page not have a underline that the html gives to basic text*/
 
 footer{
     position: scroll;
@@ -271,3 +279,5 @@ footer{
     color: rgb(0, 0, 0);
 
 }
+
+/*this changes the style of my footer and the content inside the footer*/
